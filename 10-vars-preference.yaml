@@ -5,8 +5,8 @@
   #   prompt: Please enter the NAME 
   vars_files:
   - vars.yaml
-  vars: 
-    NAME: "from play level"
+  # vars: 
+  #   NAME: "from play level"
   tasks:
   - name: print the information
     # vars: 
