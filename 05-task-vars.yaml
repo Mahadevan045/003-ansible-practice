@@ -9,12 +9,12 @@
     ansible.builtin.debug:
       msg: "Hi , I am learning {{COURSE}} , Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
-  - name: print the information
+  - name: print the information again
     vars: #task level variables ,only specific task can access this variables
       COURSE: "Ansible"
     ansible.builtin.debug:
       msg: "Hi , I am learning {{COURSE}} , Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
-      
-  - name: print the information
+
+  - name: print the information again and again
     ansible.builtin.debug:
       msg: "Hi , I am learning {{COURSE}} , Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
