@@ -12,4 +12,4 @@
     vars: 
       NAME: "from task level"
     ansible.builtin.debug:
-      msg: "Hello {{NAME}}"
+      # msg: "Hello {{NAME}}"
