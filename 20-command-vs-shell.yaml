@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: execute the command(command)
-    ansible.builtin.command: ls -ltr | /tmp/output.txt #command is useful for simple commands and not to redirections and pipes .it does not contain shell environment
+  # - name: execute the command(command)
+  #   ansible.builtin.command: ls -ltr | /tmp/output.txt #command is useful for simple commands and not to redirections and pipes .it does not contain shell environment
   - name: execute the command(shell)
     ansible.builtin.shell: ls -ltr | /tmp/output.txt #shell is useful for pipes and redirections  .it does  contain shell environment
