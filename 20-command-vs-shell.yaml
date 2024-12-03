@@ -9,3 +9,6 @@
   - name: execute the command(command)
     ansible.builtin.command: ps -ef | grep ssh
     register: output 
+  - name: execute the command(shell)
+    ansible.builtin.command: ps -ef | grep ssh
+    register: output 
