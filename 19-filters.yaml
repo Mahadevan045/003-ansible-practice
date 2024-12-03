@@ -15,3 +15,13 @@
       greeting: "HELLO Ramesh"
     ansible.builtin.debug:
       msg: "{{ greeting | lower}}"
+  - name: print the unique value
+    vars:
+      numbers: [1,2,3,4,3,2,5,6]
+    ansible.builtin.debug:
+      msg:"{{numbers | unique}}"
+  - name: get the min and max value
+    vars:
+      numbers: [1,2,3,4,5,6]
+    ansible.builtin.debug:
+      msg: "min: {{numbers | min}} max:{{numbers | max}}"
